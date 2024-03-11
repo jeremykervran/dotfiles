@@ -46,7 +46,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
 
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
