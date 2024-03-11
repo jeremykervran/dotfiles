@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+# But not these files...
+!.gitignore
+!alacritty/
+!i3/
+!picom/
+!rofi/
+!polybar/
