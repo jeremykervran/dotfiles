@@ -38,7 +38,7 @@ exec_always --no-startup-id setxkbmap -layout fr -variant mac
 
 exec_always --no-startup-id xrandr --size 2560x1440
 
-exec_always --no-startup-id feh --bg-fill ~/Images/wallpapers/wp.jpg
+exec_always --no-startup-id feh --bg-fill ~/Images/wallpapers/everforest.jpg
 
 exec_always --no-startup-id xrdb -merge ~/.Xresources
 
