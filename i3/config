@@ -34,18 +34,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec_always --no-startup-id setxkbmap -layout fr -variant mac
-
-exec_always --no-startup-id xrandr --size 2560x1440
-
-exec_always --no-startup-id feh --bg-fill ~/Images/wallpapers/everforest.jpg
-
-exec_always --no-startup-id xrdb -merge ~/.Xresources
-
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf
-
 bindsym $mod+d exec rofi -show drun
 
 # Use pactl to adjust volume in PulseAudio.
@@ -203,8 +191,19 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
+# Custom
+exec_always --no-startup-id setxkbmap -layout fr -variant mac
+
+exec_always --no-startup-id xrandr --size 2560x1440
+
+exec_always --no-startup-id feh --bg-fill ~/Images/wallpapers/everforest.jpg
+
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+
 gaps inner 10
 gaps outer 5
 
 for_window [class="^.*"] border pixel 0
-for_window [class=".*"] split toggle
+for_window [class="^.*"] split toggle
